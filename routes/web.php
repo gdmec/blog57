@@ -33,7 +33,7 @@ Route::post('admin/upload/folder', 'admin\UploadController@createFolder');
 Route::delete('admin/upload/folder', 'admin\UploadController@deleteFolder');
 
 Route::middleware('auth')->namespace('Admin')->group(function(){
-    Route::resource('admin/post','PostController');
+    Route::resource('admin/post', 'PostController', ['except' => 'show']);
     Route::resource('admin/tag',"TagController",['except'=>'show']);
     Route::resource('admin/upload','UploadController@index');
 });
