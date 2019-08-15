@@ -582,6 +582,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@fortawesome/fontawesome-free@5.9.0":
+  version "5.9.0"
+  resolved "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.9.0.tgz#1aa5c59efb1b8c6eb6277d1e3e8c8f31998b8c8e"
+
 "@fortawesome/fontawesome-free@^5.10.0":
   version "5.10.0"
   resolved "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.10.0.tgz#dbfb34093c87c9516f03ee1db3385adae3ae9461"
@@ -1087,7 +1091,7 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
 
-bootstrap@^4.1.0:
+bootstrap@4.3.1, bootstrap@^4.1.0:
   version "4.3.1"
   resolved "https://registry.npmjs.org/bootstrap/-/bootstrap-4.3.1.tgz#280ca8f610504d99d7b6b4bfc4b68cec601704ac"
 
@@ -3229,7 +3233,7 @@ isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "https://registry.npmjs.org/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
 
-jquery@>=1.7, jquery@^3.2:
+jquery@3.4.1, jquery@>=1.7, jquery@^3.2:
   version "3.4.1"
   resolved "https://registry.npmjs.org/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
 
@@ -5277,6 +5281,14 @@ stable@^0.1.8:
 stackframe@^1.0.4:
   version "1.0.4"
   resolved "https://registry.npmjs.org/stackframe/-/stackframe-1.0.4.tgz#357b24a992f9427cba6b545d96a14ed2cbca187b"
+
+startbootstrap-clean-blog@^5.0.7:
+  version "5.0.7"
+  resolved "https://registry.npmjs.org/startbootstrap-clean-blog/-/startbootstrap-clean-blog-5.0.7.tgz#867b7e7c7e54e97536fd456fe09cdb6fdde52557"
+  dependencies:
+    "@fortawesome/fontawesome-free" "5.9.0"
+    bootstrap "4.3.1"
+    jquery "3.4.1"
 
 static-extend@^0.1.1:
   version "0.1.2"

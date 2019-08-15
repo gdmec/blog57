@@ -11,6 +11,7 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Log;
 
 class PostController extends Controller
 {
@@ -71,9 +72,11 @@ class PostController extends Controller
      */
     public function store(PostCreateRequest $request)
     {
+        Log::error('store');
         $post = Post::create($request->postFillData());
+        Log::error(json_encode($post,JSON_FORCE_OBJECT));
         $post->syncTags($request->get('tags', []));
-
+        Log::error(json_encode($post,JSON_FORCE_OBJECT));
         return redirect()
             ->route('post.index')
             ->with('success', '新文章创建成功.');

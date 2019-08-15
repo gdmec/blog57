@@ -35,7 +35,7 @@ Route::delete('admin/upload/folder', 'admin\UploadController@deleteFolder');
 Route::middleware('auth')->namespace('Admin')->group(function(){
     Route::resource('admin/post', 'PostController', ['except' => 'show']);
     Route::resource('admin/tag',"TagController",['except'=>'show']);
-    Route::resource('admin/upload','UploadController@index');
+    #Route::resource('admin/upload','UploadController@index');
 });
 //登录退出
 Route::get('/login','Auth\LoginController@showLoginForm')->name('login');
